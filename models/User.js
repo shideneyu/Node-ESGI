@@ -15,7 +15,7 @@ module.exports = function(server){
             require:true
         },
         password:{
-            type:Strin,
+            type:String,
             require:true
         },
         eventId:{
