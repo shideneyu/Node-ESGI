@@ -19,9 +19,9 @@ module.exports = function(server){
             require:true
         },
         eventId:{
-            type:Number,
-        },
-    }
+            type:Number
+        }
+    });
     
     UserSchema.plugin(require('mongoose-timestamp'));
     return server.mongoose.model('User', UserSchema);

@@ -2,21 +2,21 @@ var router = require('express').Router();
 var bodyparser = require('body-parser').json();
 
 module.exports = function(server){
-  router.get('/events',
+  router.get('/',
     server.actions.events.get);
 
-  router.get('/events/:id',
+  router.get('/:id',
     server.actions.events.show);
 
-  router.post('/events/new',
+  router.post('/new',
     bodyparser,
     server.actions.events.create);
 
-  router.put('/events/:id',
+  router.put('/:id',
     bodyparser,
     server.actions.events.update);
 
-  router.delete('/events/:id',
+  router.delete('/:id',
     server.actions.events.remove);
 
   return router;
