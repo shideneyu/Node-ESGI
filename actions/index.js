@@ -1,7 +1,7 @@
 module.exports = function(server){
   server.actions = {
     events: require('./events')(server),
-    categories: require('./categories')(server)
-    users: require('./users')(server),
+    categories: require('./categories')(server),
+    users: require('./users')(server)
   }
 };

@@ -21,7 +21,7 @@ module.exports = function(server){
     participants_count: {
       type: Number,
       required: true
-    }
+    },
     category_id: {
       type: Number,
       required: true
