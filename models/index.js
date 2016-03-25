@@ -5,5 +5,6 @@ module.exports = function(server) {
 
     server.models = {
         //Todo: require('./todos')(server)
+        User: require('./User')(server),
     };
 };
