@@ -3,7 +3,7 @@ module.exports = function(server){
     create: require('./create')(server),
     get: require('./get')(server),
     show: require('./show')(server),
-    delete: require('./delete')(server),
+    remove: require('./remove')(server),
     update: require('./update')(server)
   }
 };
