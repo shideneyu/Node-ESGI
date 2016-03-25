@@ -1,6 +1,6 @@
 module.exports = function(server){
   return function(req, res, next){
-    var Event = server.models.events;
+    var Event = server.models.Event;
     var query = Event.find();
 
     query.exec(function(err, data){

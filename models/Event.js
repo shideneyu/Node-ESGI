@@ -22,6 +22,10 @@ module.exports = function(server){
       type: Number,
       required: true
     }
+    category_id: {
+      type: Number,
+      required: true
+    }
   });
 
   EventSchema.plugin(require('mongoose-timestamp'));
