@@ -1,5 +1,5 @@
 module.exports = function(server){
-    server.controllers = {
-        //todos: require('./todos')(server)
-    }
+  server.actions = {
+    events: require('./events')(server)
+  }
 };

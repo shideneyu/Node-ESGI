@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 module.exports = function(server) {
-    server.mongoose =  mongoose.connect('mongodb://localhost:27017/Node-ESGI');
+    server.mongoose =  mongoose.connect(server.settings.db.mongo);
 
     server.models = {
-        //Todo: require('./todos')(server)
+      Todo: require('./events')(server)
     };
 };
