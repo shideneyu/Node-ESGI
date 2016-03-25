@@ -15,13 +15,13 @@ module.exports = function(server){
             require:true
         },
         password:{
-            type:Strin,
+            type:String,
             require:true
         },
         eventId:{
             type:Number,
         },
-    }
+    });
     
     UserSchema.plugin(require('mongoose-timestamp'));
     return server.mongoose.model('User', UserSchema);
